@@ -1,25 +1,26 @@
-# kuberty
-Kubernetes native microservice testing framework.
+# Kuberty
+Kubernetes native testing framework for microservices. Write your tests in any language, declare your service dependencies and Kuberty will build a test cluster and test your service for you.
+
+## Documentation
+To learn more about Kuberty go to [our documentation](https://kuberty.io/docs).
 
 ## Getting started
 ### Installation
-Install the kuberty cli:
+**Install the Kuberty cli locally:**
 ```bash
 wget https://github.com/kuberty/kuberty/releases/... 
 chmod +x kuberty 
 mv kuberty /bin/bash/kuberty
 ```
-Installation instructions for Windows, mac and Docker.
+Installation instructions for [Windows](/docs/installation/windows), [Mac](/docs/installation/mac) and [Docker](/docs/installation/docker).
 
-Install the kuberty server (and istio) on your kubernetes cluster:
+**Install Kuberty on your cluster:**
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/kuberty/kuberty/master/deploy/install-kuberty.yaml
 ```
 
-### Hello kuberty
-This simple example consists of an api gateway (hat calls a count service (/increment?amount={name} returns {"count": <number of xalls}>). We won't go into detail on how to setup the services, the source is available on the links.
-
-This example will use the "python" test executor (Job and Golang are also available).
+### Example
+A simple example of how to test an api gateway that calls a count-service. This example will use the "python" test executor.
 
 test.yaml file for the api gateway:
 ```yaml
@@ -74,12 +75,3 @@ When you head into the folder for test.yaml of api-test and run:
 ```
 kuberty test
 ```
-It will execute your tests as follows:
-
-0. Start count-service with clean database, then start api-tests
-1. run setup
-2. run get-test and roll back to setup state
-3. run add-test
-4. run get-after-add-test and roll back to setup state
-5. run subtract-test
-6. run get-after-subtract-test
