@@ -8,7 +8,7 @@ To learn more about Kuberty go to [our documentation](https://wiki.tcbv.be/en/ic
 **Install the Kuberty cli locally:**
 
 ```bash
-wget https://github.com/kuberty/kuberty/releases/...  && chmod +x kuberty  &&mv kuberty /bin/bash/kuberty
+wget https://github.com/kuberty/kuberty/releases/...  && chmod +x kuberty  && mv kuberty /bin/bash/kuberty
 ```
 
 Installation instructions for [Windows](/docs/installation/windows), [Mac](/docs/installation/mac) and [Docker](/docs/installation/docker).
