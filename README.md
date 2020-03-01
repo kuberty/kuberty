@@ -2,7 +2,7 @@
 Kubernetes native testing framework for microservices. Write your tests in any language, declare your service dependencies and Kuberty will build a test cluster and test your service for you.
 
 ## Documentation
-To learn more about Kuberty go to [our documentation](https://kuberty.io/docs).
+To learn more about Kuberty go to [our documentation](https://wiki.tcbv.be/en/ict/kubernetes/kuberty).
 
 ## Getting started
 ### Installation
