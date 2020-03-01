@@ -22,7 +22,7 @@ kubectl apply -f https://raw.githubusercontent.com/kuberty/kuberty/master/deploy
 **Applications** specifies your application and it's dependencies
 
 ```yaml
-apiVersion: "kuberty.io/v1"
+apiVersion: kuberty.io/v1
 kind: Application
 metadata:
   name: auth-service-test-deployment-{{ .Values.test_id }}
@@ -46,7 +46,7 @@ spec:
 ```
 **Files** define the artifacts for your tests
 ```yaml
-apiVersion: apps/v1
+apiVersion: kuberty.io/v1
 kind: File
 metadata:
   name: auth-service-tests-file-{{ .Values.file_digest }}
@@ -59,7 +59,7 @@ spec:
 **Tests** define the tests you wish to run
 
 ```yaml
-apiVersion: "kuberty.io/v1"
+apiVersion: kuberty.io/v1
 kind: Test
 metadata:
   name: auth-service-test-{{ .Values.test_id }}
