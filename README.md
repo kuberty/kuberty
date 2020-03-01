@@ -73,6 +73,7 @@ When you head into the folder for test.yaml of api-test and run:
 kuberty test
 ```
 It will execute your tests as follows:
+
 0. Start count-service with clean database, then start api-tests
 1. run setup
 2. run get-test and roll back to setup state
