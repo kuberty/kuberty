@@ -19,8 +19,8 @@ Installation instructions for [Windows](/docs/installation/windows), [Mac](/docs
 kubectl apply -f https://raw.githubusercontent.com/kuberty/kuberty/master/deploy/install-kuberty.yaml
 ```
 
-### CRDs
-Applications specifies your application and it's dependencies:
+### Custom Resource Definitions
+**Applications** specifies your application and it's dependencies
 
 ```yaml
 apiVersion: "kuberty.io/v1"
@@ -45,7 +45,7 @@ spec:
     revision: v0.0.1
     path: helm
 ```
-Files define the artifacts for your tests
+**Files** define the artifacts for your tests
 ```yaml
 apiVersion: apps/v1
 kind: File
@@ -57,7 +57,7 @@ spec:
   url: https://raw.githubusercontent.com/kuberty/auth-/prometheus/release-2.16/documentation/examples/prometheus.yml
   digest: sha256:4377ad582f1aa7002791e0643f9b2e260b8b015e002d6dc915bf3e4b10927f9e
 ```
-Tests define the tests you wish to run.
+**Tests** define the tests you wish to run.
 
 ```yaml
 apiVersion: "kuberty.io/v1"
