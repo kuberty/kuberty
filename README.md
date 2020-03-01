@@ -53,7 +53,7 @@ tests:
 test.yaml file for the count-service:
 
 ```yaml
-name: count-service
+name: count-tests
 version: v0.0.1
 app:
   path: templates
@@ -66,6 +66,8 @@ database:
   service:
     name: redis
     namespace: count-service
+#tests:
+#we could test the count service as well (these tests would not run in this example, as we assume they have been ran already)
 ```
 
 When you head into the folder for test.yaml of api-test and run:
