@@ -4,14 +4,13 @@ Kubernetes native testing framework for microservices. Write your tests in any l
 ## Documentation
 To learn more about Kuberty go to [our documentation](https://wiki.tcbv.be/en/ict/kubernetes/kuberty).
 
-## Getting started
-### Installation
+## Installation
 **Install the Kuberty cli locally:**
+
 ```bash
-wget https://github.com/kuberty/kuberty/releases/... 
-chmod +x kuberty 
-mv kuberty /bin/bash/kuberty
+wget https://github.com/kuberty/kuberty/releases/...  && chmod +x kuberty  &&mv kuberty /bin/bash/kuberty
 ```
+
 Installation instructions for [Windows](/docs/installation/windows), [Mac](/docs/installation/mac) and [Docker](/docs/installation/docker).
 
 **Install Kuberty on your cluster:**
@@ -57,7 +56,7 @@ spec:
   url: https://raw.githubusercontent.com/kuberty/auth-/prometheus/release-2.16/documentation/examples/prometheus.yml
   digest: sha256:4377ad582f1aa7002791e0643f9b2e260b8b015e002d6dc915bf3e4b10927f9e
 ```
-**Tests** define the tests you wish to run.
+**Tests** define the tests you wish to run
 
 ```yaml
 apiVersion: "kuberty.io/v1"
