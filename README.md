@@ -60,8 +60,8 @@ app:
   environment:
   - key: REDIS_URI
     value: redis://redis.count-service
-database:
-  type: redis
+databases:
+- type: redis
   user: admin
   service:
     name: redis
