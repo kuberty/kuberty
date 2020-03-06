@@ -92,7 +92,7 @@ spec:
 ## Interesting projects:
 | Project | Relevance | Stars | 
 | -- | -- | -- |
-| [kubernetes/kube-infra kubetest](https://github.com/kubernetes/test-infra/blob/master/kubetest/README.md) | Kube-test is the way Kubernetes spins up k8s clusters in their e2e testing framework, we should recycle this | 1.9k
+| [kubernetes/kube-infra kubetest](https://github.com/kubernetes/test-infra/blob/master/kubetest/README.md) | Kube-test is the way Kubernetes spins up k8s clusters in their e2e testing framework, this has Google Cloud as the only provider for the cluster, which is an issue if we want to test locally. It could be used as one of the bootstrapping frameworks though. | 1.9k
 | [srossross/k8s-test-controller](https://srossross.github.io/k8s-test-controller/) | Very simple jobs you can run in a bootstrapped cluster to test functionality. | 17 |
 
 ## Interesting articles:
