@@ -88,3 +88,7 @@ spec:
       - name: get-after-subtract-test
         file: get-after-subtract-test.py
 ```
+
+## Interesting projects:
+| Project | Relevance | Stars | 
+| [srossross/k8s-test-controller](https://srossross.github.io/k8s-test-controller/) | Very simple jobs you can run in a bootstrapped cluster to test functionality. | 17 |
