@@ -21,7 +21,7 @@ kuberty test wait controller-test
 ```
 
 Now our test is as simple as follows:
-```
+```yaml
 apiVersion: kuberty.io/v1
 kind: Test
 metadata:
