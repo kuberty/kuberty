@@ -92,4 +92,10 @@ spec:
 ## Interesting projects:
 | Project | Relevance | Stars | 
 | -- | -- | -- |
+| [kubernetes/kube-infra kubetest](https://github.com/kubernetes/test-infra/blob/master/kubetest/README.md) | Kube-test is the way Kubernetes spins up k8s clusters in their e2e testing framework, we should recycle this | 1.9k
 | [srossross/k8s-test-controller](https://srossross.github.io/k8s-test-controller/) | Very simple jobs you can run in a bootstrapped cluster to test functionality. | 17 |
+
+## Interesting articles:
+| Article | Relevance |
+| ------- | --------- |
+| [Kubernetes article on using the e2e framework](https://kubernetes.io/blog/2019/03/22/kubernetes-end-to-end-testing-for-everyone/) | 
