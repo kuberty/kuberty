@@ -1,5 +1,5 @@
 # Kuberty
-<img src="https://github.com/kuberty/kuberty/raw/master/logos/logo.png" width="300">
+<img src="https://github.com/kuberty/kuberty/raw/master/logos/logo.png" width="100">
 
 Kubernetes native testing framework for microservices. Write your tests in any language, declare your service dependencies and Kuberty will build a test cluster and test your service for you.
 
